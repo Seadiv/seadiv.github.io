@@ -110,6 +110,8 @@ nav, .welcome-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  
 }
 
 .welcome-nav{
@@ -156,10 +158,32 @@ nav li a:hover, .welcome-nav li a:hover {
   background-color: rgb(181, 181, 181);
 }
 
+.hamburger {
+  display: none;
+}
 
 main {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+
+.social-links #menu-page {
+  display: none;
+}
+
+@media only screen and (max-width: 650px) {
+  .nav-hidden {
+    display: none;
+  }
+  .welcome-nav {
+    justify-content: center;
+  }
+  nav {
+    justify-content: space-between;
+  }
+  .hamburger {
+    display: flex;
+  }
 }

@@ -27,29 +27,34 @@
     <nav>
         <h1>seadiv</h1>
         <ul class="nav-links">
-            <li>
-                <a href=""><strong>Landing</strong></a>
+            <li class="nav-hidden">
+                <a href=""><strong>Index</strong></a>
             </li>
-            <li>
+            <li class="nav-hidden">
                 <a href=""><strong>Blog</strong></a>
             </li>
-            <li>
+            <li class="nav-hidden">
                 <a href=""><strong>Artwork</strong></a>
             </li>
-            <li>
+            <li class="nav-hidden">
                 <a href=""><strong>Resume</strong></a>
+            </li>
+            <li class="hamburger">
+                <a href="javascript:void(0);" onclick="hamburgerjs()"><img src="media/svgs/feather/menu.svg" alt="burger" /></a>
             </li>
         </ul>
     </nav>
     <main>
         <nav class="welcome-nav">
-            <h1>Welcome!</h1>
-            <ul class="social-links">
+            <h1 class="nav-hidden">Welcome!</h1>
+            <ul class="social-links" id="menu-page">
                 <li><a href=""><img src="media/svgs/feather/youtube.svg" alt="YouTube" /></a></li>
                 <li><a href=""><img src="media/svgs/feather/linkedin.svg" alt="linkedIn" /></a></li>
+                <li><a href=""><img src="media/svgs/feather/github.svg" alt="github" /></a></li>
             </ul>
         </nav>
     </main>
+    <script src="media/js/hamburgerjs.js"></script>
 </body>
 
 </html>
