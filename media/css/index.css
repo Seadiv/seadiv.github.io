@@ -89,20 +89,26 @@
 /* Page Contents */
 
 body {
+  font-family: "IBM Plex Serif", serif;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  font-family: "IBM+Plex+Serif", sans-serif;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
+  background-color: white;
+  align-items: center;
 }
 
 nav h1 {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
   padding: 14px 14px;
-  height: 25px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
 }
 
 nav ul {
@@ -110,24 +116,33 @@ nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  display: flex;
 }
 
 nav li {
   float: left;
 }
 
-nav li a:hover {
-  background-color: antiquewhite;
-}
-
 nav li a {
   text-decoration: none;
   color: black;
+  padding: 14px 14px;
   display: flex;
   overflow: hidden;
-  padding: 14px 14px;
   height: 25px;
   font-size: 15px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-main {}
+nav li a:hover {
+  background-color: rgb(181, 181, 181);
+}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
