@@ -96,6 +96,7 @@ html {
 
 html, body {
   height: 100%;
+  width: 100%;
 }
 
 body {
@@ -167,10 +168,6 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-}
-
-.social-links #menu-page {
-  display: none;
 }
 
 @media only screen and (max-width: 650px) {
