@@ -1,6 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 /* Fonts */
+
+.fontdiner-swanky-regular {
+  font-family: "Fontdiner Swanky", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 .ibm-plex-serif-thin {
   font-family: "IBM Plex Serif", serif;
@@ -95,8 +101,11 @@ html {
 }
 
 html, body {
-  height: 100%;
-  width: 100%;
+  background-color: rgb(195, 248, 244);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
 }
 
 body {
@@ -107,6 +116,16 @@ body {
   justify-content: space-between;
 }
 
+.wi-container {
+  display: flex;
+  justify-content: center;
+}
+
+.welcome-image {
+  max-height: 60vh;
+  max-width: max-content;
+}
+
 nav, .welcome-nav {
   display: flex;
   justify-content: space-between;
@@ -115,11 +134,12 @@ nav, .welcome-nav {
   
 }
 
-.welcome-nav{
+.welcome-nav {
   flex: 1;
 }
 
 nav h1, .welcome-nav h1 {
+  font-family: "Fontdiner Swanky", sans-serif;
   list-style-type: none;
   margin: 0;
   overflow: hidden;
@@ -127,7 +147,7 @@ nav h1, .welcome-nav h1 {
   justify-content: center;
   text-align: center;
   align-items: center;
-
+  margin-left: 1vw;
 }
 
 nav ul, .welcome-nav ul {
@@ -136,6 +156,10 @@ nav ul, .welcome-nav ul {
   padding: 0;
   overflow: hidden;
   display: flex;
+  margin-top: 1vh;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-bottom: 1vh;
 }
 
 nav li, .welcome-nav li {
@@ -153,10 +177,17 @@ nav li a, .welcome-nav li a {
   justify-content: center;
   align-items: center;
   text-align: center;
+  border-radius: 25px;
+  background-color: rgb(238, 165, 82);
+  margin-left: .2vw;
+  margin-right: .2vw;
+  border-style: dashed;
+  border-color: rgb(245, 92, 4);
+
 }
 
 nav li a:hover, .welcome-nav li a:hover {
-  background-color: rgb(181, 181, 181);
+  background-color: rgb(120, 228, 178);
 }
 
 .hamburger {
