@@ -221,6 +221,16 @@ nav li a:hover, .welcome-nav li a:hover {
   flex-direction: column;
 }
 
+.overlay-nav ul {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.overlay-nav ul li {
+  padding: 1vh;
+}
+
 main {
   display: flex;
   flex-direction: row;
@@ -237,6 +247,10 @@ main {
   }
   nav {
     justify-content: space-between;
+    align-items: end;
+  }
+  .overlay-nav ul {
+    justify-content: right;
   }
   .hamburger {
     display: flex;
