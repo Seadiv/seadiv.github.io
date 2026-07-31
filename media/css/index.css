@@ -194,6 +194,33 @@ nav li a:hover, .welcome-nav li a:hover {
   display: none;
 }
 
+#overlay-menu {
+  position: fixed;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  flex-direction: column;
+}
+
+.burger-exit {
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 2vh;
+  padding-bottom: 1vh;
+  justify-content: right;
+}
+
+.overlay-nav {
+  display: flex;
+  flex-direction: column;
+}
+
 main {
   display: flex;
   flex-direction: row;
